@@ -1,1 +1,1 @@
-export * from './get-age'
+export * from './getAge'
