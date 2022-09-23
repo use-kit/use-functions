@@ -1,6 +1,6 @@
 # use-functions
 
-👻 self-use functions.
+🦄 self-use functions.
 
 [![NPM version](https://img.shields.io/npm/v/use-functions?color=a1b858&label=)](https://www.npmjs.com/package/@use-kit/functions)
 
