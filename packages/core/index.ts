@@ -1,2 +1,2 @@
 export * from './getAge'
-export * from './watchPopStateToStay'
+export * from './getObjectFiled'
