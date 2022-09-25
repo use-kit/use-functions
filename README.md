@@ -2,7 +2,7 @@
 
 🦄 self-use functions.
 
-[![NPM version](https://img.shields.io/npm/v/use-functions?color=a1b858&label=)](https://www.npmjs.com/package/@use-kit/functions)
+[![NPM version](https://img.shields.io/npm/v/@use-kit/functions?color=a1b858&label=)](https://www.npmjs.com/package/@use-kit/functions)
 
 ## Usage
 
