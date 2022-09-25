@@ -1,2 +1,2 @@
 export * from './getAge'
-export * from './getObjectFiled'
+export * from './getObjectField'

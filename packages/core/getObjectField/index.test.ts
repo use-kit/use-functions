@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { getObjectFiled, objectFilter } from '.'
+import { getObjectField, objectFilter } from '.'
 
 describe('should', () => {
   const obj = { name: 'asuka', age: 23, height: 158 }
 
   it('getObjectFiled', () => {
-    expect(getObjectFiled(obj, ['name'])).toMatchInlineSnapshot(`
+    expect(getObjectField(obj, ['name'])).toMatchInlineSnapshot(`
       {
         "name": "asuka",
       }

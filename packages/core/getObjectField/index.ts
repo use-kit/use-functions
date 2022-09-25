@@ -1,8 +1,7 @@
 type Param = string | number | symbol
-type Obj = Record<Param, Param>
-type Fn = (key: Param, value?: Param) => void
+type Fn = (key: Param, value?: unknown) => void
 
-export const objectFilter = (obj: Obj, callback: Fn): Obj => {
+export const objectFilter = (obj: Record<string | number | symbol, unknown>, callback: Fn): Record<string | number | symbol, unknown> => {
   return Object.keys(obj)
     .filter(key => callback(key, obj[key]))
     .reduce((res: any, key: any) => {
@@ -11,7 +10,7 @@ export const objectFilter = (obj: Obj, callback: Fn): Obj => {
     }, {})
 }
 
-export const getObjectFiled = (obj: Obj, fields: Param[]) => {
+export const getObjectField = (obj: Record<string | number | symbol, unknown>, fields: Param[]) => {
   return objectFilter(obj, (key: Param) => {
     return fields.includes(key)
   })
