@@ -2,14 +2,15 @@
 category: '@Core'
 ---
 
-# getAge
+# flattenArray
 
-computed age.
+flat array.
 
 ## Usage
 
 ```ts
-import { getAge } from '@use-kit/functions'
+import { flattenArray } from '@use-kit/functions'
 
-const ret = getAge('1997-09-28') // 24
+const array = ['asuka', ['shiori', 'mizuki']]
+const ret = flattenArray(array) // [ 'asuka', 'shiori', 'mizuki' ]
 ```
