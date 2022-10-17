@@ -3,11 +3,11 @@ interface Content {
   to?: 'top' | 'bottom'
 }
 
-export const scrollIntoView = (content: Content, callback?: Function): void => {
+export const scrollIntoView = (content?: Content, callback?: Function): void => {
   let el: Element | null
-  const to = content.to ?? 'top'
+  const to = content?.to ?? 'top'
 
-  if (!content.dom)
+  if (!content?.dom)
     el = window.document.firstElementChild
   else
     el = to === 'top' ? content.dom.firstElementChild : content.dom.lastElementChild
