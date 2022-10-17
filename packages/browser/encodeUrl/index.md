@@ -9,7 +9,7 @@ encode url params.
 ## Usage
 
 ```ts
-import { getUrlQuery, encryptUrlParam, decryptUrlParam } from '@use-kit/functions'
+import { decryptUrlParam, encryptUrlParam, getUrlQuery } from '@use-kit/functions'
 
 const query = getUrlQuery()
 const encrypt = encryptUrlParam(query)
