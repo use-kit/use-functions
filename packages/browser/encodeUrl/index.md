@@ -1,5 +1,5 @@
 ---
-category: '@Core'
+category: '@Browser'
 ---
 
 # encodeUrl
@@ -9,7 +9,9 @@ encode url params.
 ## Usage
 
 ```ts
-import { getAge } from '@use-kit/functions'
+import { getUrlQuery, encryptUrlParam, decryptUrlParam } from '@use-kit/functions'
 
-const ret = getAge('1997-09-28') // 24
+const query = getUrlQuery()
+const encrypt = encryptUrlParam(query)
+const decrypt = decryptUrlParam(encrypt)
 ```

@@ -1,5 +1,5 @@
 ---
-category: '@Core'
+category: '@Browser'
 ---
 
 # watchPopStateToStay
