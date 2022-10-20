@@ -1,9 +1,20 @@
-import { getNode, getNodes, getTreeNode, getTreeNodes } from '.'
+import { getTreeNode, getTreeNodes } from '../getTreeNode'
+import { flattenTree } from '.'
 
 const tree = [{
   id: 'nogi',
   children: [{ id: 'asuka', parent: 'nogi' }, { id: 'shiori', parent: 'nogi' }],
 }]
+
+const getNodes = (tree: any, callback: Function) => {
+  const nodes = flattenTree(tree)
+  return nodes.filter(node => callback(node))
+}
+
+const getNode = (tree: any, callback: Function) => {
+  const nodes = flattenTree(tree)
+  return nodes.find(node => callback(node))
+}
 
 console.time('test getTreeNode')
 for (let i = 0; i < 10000; i++)
