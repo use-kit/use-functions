@@ -23,3 +23,16 @@ export const getTreeNode = (tree: any, callback: Function, ret = undefined) => {
 
   return ret
 }
+
+export const getParentTree = (tree: any, callback: Function, ret = undefined) => {
+  tree.forEach((node: any) => {
+    if (callback(node))
+      ret = tree
+
+    const { children } = node
+    if (Array.isArray(children))
+      ret = getParentTree(children, callback, ret)
+  })
+
+  return ret
+}

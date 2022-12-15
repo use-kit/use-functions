@@ -33,6 +33,6 @@ function makeTree(treeNodes: TreeNode[]): TreeNode[] {
   return virtualRoot.children ?? [];
 }
 
-const list = [{ id: 'nogi', parent: '' }, { id: 'asuka', parent: 'nogi' }, { id: 'shiori', parent: 'nogi' }]
+const list = [{ id: 'nogi', parent: 'root' }, { id: 'asuka', parent: 'nogi' }, { id: 'shiori', parent: 'nogi' }]
 const ret = makeTree(list)
 console.log('ret: ', JSON.stringify(ret))
