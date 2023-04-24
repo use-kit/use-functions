@@ -50,7 +50,8 @@
     "docs:preview": "vitepress preview packages/docs"
   },
   "dependencies": {
-    "dayjs": "^1.11.5"
+    "dayjs": "^1.11.5",
+    "observer-emit": "^1.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.26.1",
