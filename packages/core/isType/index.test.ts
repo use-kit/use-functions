@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'vitest'
-import { isNull, isUndefined, isArray, isType, isString } from '.'
+import { describe, expect, it } from 'vitest'
+import { isArray, isNull, isString, isType, isUndefined } from '.'
 
 describe('should', () => {
   it('is null', () => {

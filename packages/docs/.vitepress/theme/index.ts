@@ -6,5 +6,5 @@ export default {
   ...Theme,
   Layout() {
     return h(Theme.Layout, null, {})
-  }
+  },
 }

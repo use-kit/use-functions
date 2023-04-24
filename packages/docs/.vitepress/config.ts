@@ -2,11 +2,11 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Use Functions",
+  title: 'Use Functions',
 
   appearance: 'dark',
 
-  description: "Collection of Utility Functions",
+  description: 'Collection of Utility Functions',
 
   markdown: {
     theme: {
@@ -27,7 +27,7 @@ export default defineConfig({
       { text: 'Guide', link: '/guide/' },
       { text: 'API', link: '/api/', activeMatch: '^/api/' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Home', link: '/' }
+      { text: 'Home', link: '/' },
     ],
 
     sidebar: [
@@ -35,18 +35,18 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: 'Runtime API Examples', link: '/api-examples' },
+        ],
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/use-kit/use-functions' }
+      { icon: 'github', link: 'https://github.com/use-kit/use-functions' },
     ],
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-PRESENT Akashi Sai'
+      copyright: 'Copyright © 2022-PRESENT Akashi Sai',
     },
   },
 
