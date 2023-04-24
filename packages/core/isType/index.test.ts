@@ -1,4 +1,29 @@
-// import { isNull, isUndefined, isArray, isType } from '.'
+import { describe, it, expect } from 'vitest'
+import { isNull, isUndefined, isArray, isType, isString } from '.'
+
+describe('should', () => {
+  it('is null', () => {
+    expect(isNull(null)).toBe(true)
+  })
+
+  it('is undefined', () => {
+    expect(isUndefined(undefined)).toBe(true)
+  })
+
+  it('is string', () => {
+    expect(isString('akashi')).toBe(true)
+  })
+
+  it('is array', () => {
+    expect(isArray([])).toBe(true)
+  })
+
+  it('is type', () => {
+    expect(isType('boolean')(false)).toBe(true)
+
+    expect(isType('number')(1)).toBe(true)
+  })
+})
 
 // const ret = null
 // console.log(isType('null')(ret))

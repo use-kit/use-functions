@@ -8,8 +8,9 @@ const fields = {
   children: 'children',
 }
 
-export const generateTree = (list, root, fields) => {
-  //
+export const generateTree = (list: any[], root?: string, fields?: any) => {
+  // TODO
+  return undefined
 }
 
 interface TreeNode {
