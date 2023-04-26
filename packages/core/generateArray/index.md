@@ -4,7 +4,7 @@ category: '@Core'
 
 # generateArray
 
-compose array.
+Compose array.
 
 ## Usage
 

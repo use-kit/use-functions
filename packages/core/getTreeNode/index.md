@@ -4,7 +4,7 @@ category: '@Core'
 
 # getTreeNode
 
-get tree node.
+Get tree node.
 
 ## Usage
 

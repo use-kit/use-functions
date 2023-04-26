@@ -4,7 +4,7 @@ category: '@Core'
 
 # composeTree
 
-compose tree.
+Compose tree.
 
 ## Usage
 

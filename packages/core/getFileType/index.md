@@ -4,7 +4,7 @@ category: '@Core'
 
 # getFileType
 
-get file type.
+Get file type.
 
 ## Usage
 

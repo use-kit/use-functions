@@ -4,7 +4,7 @@ category: '@Browser'
 
 # watchPopStateToStay
 
-keep browser history to stay.
+Keep browser history to stay.
 
 ## Usage
 

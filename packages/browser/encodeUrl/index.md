@@ -4,7 +4,7 @@ category: '@Browser'
 
 # encodeUrl
 
-encode url params.
+Encode url params.
 
 ## Usage
 

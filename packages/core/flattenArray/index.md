@@ -4,7 +4,7 @@ category: '@Core'
 
 # flattenArray
 
-flat array.
+Flat array.
 
 ## Usage
 

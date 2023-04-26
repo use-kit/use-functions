@@ -4,7 +4,7 @@ category: '@Browser'
 
 # scrollIntoView
 
-scroll into the view.
+Scroll into the view.
 
 ## Usage
 

@@ -4,7 +4,7 @@ category: '@Core'
 
 # flattenTree
 
-flat tree.
+Flat tree.
 
 ## Usage
 
@@ -17,4 +17,5 @@ const tree = [{
 }]
 
 const ret = flattenTree(tree)
+// expect [{"id": "asuka", "parent": "nogi" }, { "id": "shiori", "parent": "nogi" }, { "id": "nogi" }]
 ```
