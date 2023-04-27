@@ -34,7 +34,7 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'How to use', link: '/guide' },
-        ]
+        ],
       },
       {
         text: 'Core',
@@ -49,22 +49,22 @@ export default defineConfig({
           { text: 'getObjectField', link: '/core/getObjectField/' },
           { text: 'getTreeNode', link: '/core/getTreeNode/' },
           { text: 'isType', link: '/core/isType/' },
-        ]
+        ],
       },
       {
         text: 'Integrated',
         items: [
-          { text: 'emitter', link: '/integrated/emitter/' }
-        ]
+          { text: 'emitter', link: '/integrated/emitter/' },
+        ],
       },
       {
         text: 'Browser',
         items: [
           { text: 'encodeUrl', link: '/browser/encodeUrl/' },
           { text: 'scrollIntoView', link: '/browser/scrollIntoView/' },
-          { text: 'watchPopStateToStay', link: '/browser/watchPopStateToStay/' }
-        ]
-      }
+          { text: 'watchPopStateToStay', link: '/browser/watchPopStateToStay/' },
+        ],
+      },
     ],
 
     socialLinks: [
