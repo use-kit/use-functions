@@ -21,23 +21,50 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/favicon.png',
+    logo: '/use.svg',
 
     nav: [
-      { text: 'Guide', link: '/guide/' },
-      { text: 'API', link: '/api/', activeMatch: '^/api/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Guide', link: '/guide' },
+      { text: 'Functions', link: '/core/composeTree/' },
       { text: 'Home', link: '/' },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Introduction',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
+          { text: 'How to use', link: '/guide' },
+        ]
       },
+      {
+        text: 'Core',
+        items: [
+          { text: 'composeTree', link: '/core/composeTree/' },
+          { text: 'flattenArray', link: '/core/flattenArray/' },
+          { text: 'flattenTree', link: '/core/flattenTree/' },
+          { text: 'generateArray', link: '/core/generateArray/' },
+          { text: 'generateTree', link: '/core/generateTree/' },
+          { text: 'getAge', link: '/core/getAge/' },
+          { text: 'getFileType', link: '/core/getFileType/' },
+          { text: 'getObjectField', link: '/core/getObjectField/' },
+          { text: 'getTreeNode', link: '/core/getTreeNode/' },
+          { text: 'isType', link: '/core/isType/' },
+        ]
+      },
+      {
+        text: 'Integrated',
+        items: [
+          { text: 'emitter', link: '/integrated/emitter/' }
+        ]
+      },
+      {
+        text: 'Browser',
+        items: [
+          { text: 'encodeUrl', link: '/browser/encodeUrl/' },
+          { text: 'scrollIntoView', link: '/browser/scrollIntoView/' },
+          { text: 'watchPopStateToStay', link: '/browser/watchPopStateToStay/' }
+        ]
+      }
     ],
 
     socialLinks: [
@@ -52,8 +79,8 @@ export default defineConfig({
 
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['link', { rel: 'icon', href: '/favicon-32x32.png', type: 'image/png' }],
-    ['link', { rel: 'icon', href: '/favicon.png', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: '/use-32x32.svg', type: 'image/png' }],
+    ['link', { rel: 'icon', href: '/use.svg', type: 'image/svg+xml' }],
     ['meta', { name: 'author', content: 'Akashi Sai' }],
   ],
 })

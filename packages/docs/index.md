@@ -10,22 +10,28 @@ hero:
   text: "Collection of Utility Functions"
   tagline: A Collection of Practical Pure Functions
   image:
-    src: /favicon.png
+    src: /use.svg
     alt: UseFunctions
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get Started
+      link: /guide
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Functions
+      link: /core/composeTree/
 
 features:
-  - title: 💡 Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: 💫 Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: 🔑 Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 💡 Intuitive
+    details: The API has been designed to provide a well-sample user experience.
+  - title: 💫 Pure Function
+    details: Function calls without side effects, no dependencies on external variables.
+  - title: 🔑 Type Strong
+    details: Flexible programmatic APIs with full TypeScript typing.
+  - title: 💪 Robust Code
+    details: Improve code maintainability and reusability.
+  - title: ⭐️ Best Readability
+    details: Reduce code complexity, improve readability and maintainability.
+  - title: 🚀 Scalable & Efficient
+    details: Easy to extend high-quality application code.
 ---
 
