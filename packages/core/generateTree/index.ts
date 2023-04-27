@@ -1,7 +1,10 @@
-// const node = {
-//   id: 'nogi',
-// }
+interface TreeNode {
+  id: number | string
+  parent: number | string
+  children?: TreeNode[]
+}
 
+// TODO: support replace fields
 // const fields = {
 //   id: 'id',
 //   parent: 'parent',
@@ -9,15 +12,8 @@
 // }
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
-export const generateTree = (list: any[], root?: string, fields?: any) => {
-  // TODO
-  return undefined
-}
-
-interface TreeNode {
-  id: number | string
-  parent: number | string
-  children?: TreeNode[]
+export const generateTree = (nodes: TreeNode[], root?: string, fields?: any) => {
+  return makeTree(nodes)
 }
 
 function makeTree(treeNodes: TreeNode[]): TreeNode[] {
@@ -34,7 +30,3 @@ function makeTree(treeNodes: TreeNode[]): TreeNode[] {
 
   return virtualRoot.children ?? []
 }
-
-const list = [{ id: 'nogi', parent: 'root' }, { id: 'asuka', parent: 'nogi' }, { id: 'shiori', parent: 'nogi' }]
-const ret = makeTree(list)
-console.log('ret: ', JSON.stringify(ret))
