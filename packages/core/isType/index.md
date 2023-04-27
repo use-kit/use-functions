@@ -9,9 +9,9 @@ Judgment field type.
 ## Usage
 
 ```ts
-import { isString, isArray, isType } from '@use-kit/functions'
+import { isArray, isString, isType } from '@use-kit/functions'
 
-const string = isString('')        // true
-const array = isArray(1)           // false
-const type = isType('array')([])   // true
+const string = isString('') // true
+const array = isArray(1) // false
+const type = isType('array')([]) // true
 ```

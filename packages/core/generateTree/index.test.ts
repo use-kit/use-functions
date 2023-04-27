@@ -3,11 +3,28 @@ import { generateTree } from '.'
 
 describe('should', () => {
   it('generateTree', () => {
-    const list = [
-      { id: 'nogi' },
+    const nodes = [
+      { id: 'nogi', parent: 'root' },
       { id: 'asuka', parent: 'nogi' },
       { id: 'shiori', parent: 'nogi' },
     ]
-    expect(generateTree(list)).toMatchInlineSnapshot('undefined')
+    expect(generateTree(nodes)).toMatchInlineSnapshot(`
+      [
+        {
+          "children": [
+            {
+              "id": "asuka",
+              "parent": "nogi",
+            },
+            {
+              "id": "shiori",
+              "parent": "nogi",
+            },
+          ],
+          "id": "nogi",
+          "parent": "root",
+        },
+      ]
+    `)
   })
 })
