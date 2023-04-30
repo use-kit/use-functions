@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { getFunctionsSideBar } from './utils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -36,35 +37,36 @@ export default defineConfig({
           { text: 'How to use', link: '/guide' },
         ],
       },
-      {
-        text: 'Core',
-        items: [
-          { text: 'composeTree', link: '/core/composeTree/' },
-          { text: 'flattenArray', link: '/core/flattenArray/' },
-          { text: 'flattenTree', link: '/core/flattenTree/' },
-          { text: 'generateArray', link: '/core/generateArray/' },
-          { text: 'generateTree', link: '/core/generateTree/' },
-          { text: 'getAge', link: '/core/getAge/' },
-          { text: 'getFileType', link: '/core/getFileType/' },
-          { text: 'getObjectField', link: '/core/getObjectField/' },
-          { text: 'getTreeNode', link: '/core/getTreeNode/' },
-          { text: 'isType', link: '/core/isType/' },
-        ],
-      },
-      {
-        text: 'Integrated',
-        items: [
-          { text: 'emitter', link: '/integrated/emitter/' },
-        ],
-      },
-      {
-        text: 'Browser',
-        items: [
-          { text: 'encodeUrl', link: '/browser/encodeUrl/' },
-          { text: 'scrollIntoView', link: '/browser/scrollIntoView/' },
-          { text: 'watchPopStateToStay', link: '/browser/watchPopStateToStay/' },
-        ],
-      },
+      // {
+      //   text: 'Core',
+      //   items: [
+      //     { text: 'composeTree', link: '/core/composeTree/' },
+      //     { text: 'flattenArray', link: '/core/flattenArray/' },
+      //     { text: 'flattenTree', link: '/core/flattenTree/' },
+      //     { text: 'generateArray', link: '/core/generateArray/' },
+      //     { text: 'generateTree', link: '/core/generateTree/' },
+      //     { text: 'getAge', link: '/core/getAge/' },
+      //     { text: 'getFileType', link: '/core/getFileType/' },
+      //     { text: 'getObjectField', link: '/core/getObjectField/' },
+      //     { text: 'getTreeNode', link: '/core/getTreeNode/' },
+      //     { text: 'isType', link: '/core/isType/' },
+      //   ],
+      // },
+      // {
+      //   text: 'Integrated',
+      //   items: [
+      //     { text: 'emitter', link: '/integrated/emitter/' },
+      //   ],
+      // },
+      // {
+      //   text: 'Browser',
+      //   items: [
+      //     { text: 'encodeUrl', link: '/browser/encodeUrl/' },
+      //     { text: 'scrollIntoView', link: '/browser/scrollIntoView/' },
+      //     { text: 'watchPopStateToStay', link: '/browser/watchPopStateToStay/' },
+      //   ],
+      // },
+      ...getFunctionsSideBar(),
     ],
 
     socialLinks: [

@@ -1,5 +1,4 @@
 import fs, { Dirent } from 'node:fs'
-import path from 'node:path'
 import fg from 'fast-glob'
 import { mkdirp } from 'mkdirp'
 
@@ -8,7 +7,7 @@ interface Opt {
   type: 'file' | 'directory'
 }
 
-const root = path.dirname(process.cwd())
+// const root = path.dirname(process.cwd())
 
 function scan(path: string, opt: Partial<Opt> = { filters: [], type: 'directory' }): fs.Dirent[] {
   return fs.readdirSync(path, { withFileTypes: true }).map((dirent: fs.Dirent) => {
@@ -19,7 +18,7 @@ function scan(path: string, opt: Partial<Opt> = { filters: [], type: 'directory'
 }
 
 function ci() {
-  const pkgs = `${root}/packages`
+  const pkgs = './packages'
   const folders = scan(pkgs, { filters: ['docs', 'utils'] })
 
   folders.forEach((dir: fs.Dirent) => {
