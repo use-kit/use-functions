@@ -1,6 +1,6 @@
-import fg from 'fast-glob'
 import fs, { Dirent } from 'node:fs'
 import path from 'node:path'
+import fg from 'fast-glob'
 import { mkdirp } from 'mkdirp'
 
 interface Opt {
@@ -19,7 +19,7 @@ function scan(path: string, opt: Partial<Opt> = { filters: [], type: 'directory'
 }
 
 function ci() {
-  const pkgs =`${root}/packages`
+  const pkgs = `${root}/packages`
   const folders = scan(pkgs, { filters: ['docs', 'utils'] })
 
   folders.forEach((dir: fs.Dirent) => {
