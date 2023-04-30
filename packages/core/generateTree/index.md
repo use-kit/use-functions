@@ -16,7 +16,7 @@ const list = [
   { id: 'asuka', parent: 'nogi' },
   { id: 'shiori', parent: 'nogi' }
 ]
-const ret = generateTree(list, root, replaceFields)
+const ret = generateTree(list)
 
 // expect:
 // [
@@ -24,7 +24,8 @@ const ret = generateTree(list, root, replaceFields)
 //     id: 'nogi',
 //     children: [
 //       { id: 'asuka', parent: 'nogi' },
-//       { id: 'shiori', parent: 'nogi' }]
+//       { id: 'shiori', parent: 'nogi' }
+//     ]
 //   }
 // ]
 ```
