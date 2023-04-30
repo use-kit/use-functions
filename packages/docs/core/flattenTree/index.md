@@ -21,7 +21,7 @@ const tree = [{
 
 const ret = flattenTree(tree)
 
-// expect
+// expect:
 // [
 //   {"id": "asuka", "parent": "nogi" },
 //   { "id": "shiori", "parent": "nogi" },
