@@ -1,21 +1,9 @@
-import fs, { Dirent } from 'node:fs'
+import fs from 'node:fs'
 import fg from 'fast-glob'
 import { mkdirp } from 'mkdirp'
-
-interface Opt {
-  filters: string[]
-  type: 'file' | 'directory'
-}
+import { scan } from '../packages'
 
 // const root = path.dirname(process.cwd())
-
-function scan(path: string, opt: Partial<Opt> = { filters: [], type: 'directory' }): fs.Dirent[] {
-  return fs.readdirSync(path, { withFileTypes: true }).map((dirent: fs.Dirent) => {
-    if (!(opt.filters || []).includes(dirent.name))
-      return dirent
-    return new Dirent()
-  }).filter((f: fs.Dirent) => f.name && opt.type === 'file' ? f.isFile() : f.isDirectory())
-}
 
 function ci() {
   const pkgs = './packages'
