@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { isArray, isNull, isString, isType, isUndefined, isSymbol, isMap, typeOf } from '.'
+import { isArray, isMap, isNull, isString, isSymbol, isType, isUndefined, typeOf } from '.'
 
 describe('should', () => {
   it('is null', () => {
@@ -19,7 +19,7 @@ describe('should', () => {
   })
 
   it('is symbol', () => {
-    expect(isSymbol(Symbol())).toBe(true)
+    expect(isSymbol(Symbol('test symbol'))).toBe(true)
   })
 
   it('is map', () => {
