@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { isArray, isNull, isString, isType, isUndefined } from '.'
+import { isArray, isNull, isString, isType, isUndefined, isSymbol, isMap, typeOf } from '.'
 
 describe('should', () => {
   it('is null', () => {
@@ -16,6 +16,18 @@ describe('should', () => {
 
   it('is array', () => {
     expect(isArray([])).toBe(true)
+  })
+
+  it('is symbol', () => {
+    expect(isSymbol(Symbol())).toBe(true)
+  })
+
+  it('is map', () => {
+    expect(isMap(new Map())).toBe(true)
+  })
+
+  it('type of', () => {
+    expect(typeOf([])).toMatchInlineSnapshot('"array"')
   })
 
   it('is type', () => {
