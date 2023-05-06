@@ -1,3 +1,6 @@
+export * from './clipboardRead'
+export * from './clipboardWrite'
+export * from './download'
 export * from './encodeUrl'
 export * from './watchPopStateToStay'
 export * from './scrollIntoView'
