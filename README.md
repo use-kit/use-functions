@@ -1,6 +1,6 @@
 # use-functions
 
-🦄 self-use functions.
+🦄 Collection of Practical Pure Functions.
 
 [![NPM version](https://img.shields.io/npm/v/@use-kit/functions?color=a1b858&label=)](https://www.npmjs.com/package/@use-kit/functions)
 
@@ -15,6 +15,8 @@ import { getSomething } from '@use-kit/functions'
 
 const ret = getSomething()
 ```
+
+Specific Functions See [Document](https://use-functions.netlify.app/).
 
 ## License
 

@@ -11,8 +11,7 @@ interface TreeNode {
 //   children: 'children',
 // }
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
-export const generateTree = (nodes: TreeNode[], root?: string, fields?: any) => {
+export const generateTree = (nodes: TreeNode[]) => {
   return makeTree(nodes)
 }
 
@@ -23,7 +22,7 @@ function makeTree(treeNodes: TreeNode[]): TreeNode[] {
 
   const virtualRoot = {} as Partial<TreeNode>
 
-  treeNodes.forEach((node, i) => {
+  treeNodes.forEach((node) => {
     const parent = nodesMap.get(node.parent) ?? virtualRoot;
     (parent.children ??= []).push(node)
   })
