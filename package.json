@@ -7,12 +7,12 @@
   "author": "Akashi Sai <akashi_sai@163.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/akashigakki",
-  "homepage": "https://github.com/akashigakki/use-functions#readme",
+  "homepage": "https://github.com/use-kit/use-functions#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akashigakki/use-functions.git"
+    "url": "git+https://github.com/use-kit/use-functions.git"
   },
-  "bugs": "https://github.com/akashigakki/use-functions/issues",
+  "bugs": "https://github.com/use-kit/use-functions/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
