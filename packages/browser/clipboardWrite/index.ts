@@ -4,8 +4,7 @@ export const clipboardWrite = async (text: string) => {
       navigator.clipboard.writeText(text)
         .then(() => resolve(true))
         .catch((err) => {
-          reject(false)
-          throw new Error(err)
+          reject(new Error(err))
         })
     })
   }
@@ -17,7 +16,7 @@ export const clipboardWrite = async (text: string) => {
     input.style.display = 'none'
 
     return new Promise((resolve, reject) => {
-      document.execCommand('copy') ? resolve(true) : reject(false)
+      document.execCommand('copy') ? resolve(true) : reject(new Error('false'))
 
       document.body.removeChild(input)
     })
