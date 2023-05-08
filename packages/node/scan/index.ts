@@ -10,5 +10,5 @@ export function scan(path: string, opt: Partial<Options> = { filters: [], type: 
     if (!(opt.filters || []).includes(dirent.name))
       return dirent
     return new Dirent()
-  }).filter((f: fs.Dirent) => f.name && opt.type === 'file' ? f.isFile() : f.isDirectory())
+  }).filter((f: fs.Dirent) => f.name && (opt.type === 'file' ? f.isFile() : f.isDirectory()))
 }

@@ -1,4 +1,4 @@
-// TODO: Symbol BigInt Date RegExp Int8Array... Map Set
+// TODO: BigInt Date RegExp Int8Array...
 // TODO: WeakMap WeakSet ArrayBuffer AsyncFunction Reflect Proxy
 type PropsType = 'null' | 'undefined' | 'number' | 'boolean' | 'string' | 'array' | 'function' | 'object'
 
@@ -33,6 +33,22 @@ export const isFunction = (obj: unknown) => {
 
 export const isObject = (obj: unknown) => {
   return Object.prototype.toString.call(obj) === '[object Object]'
+}
+
+export const isSymbol = (obj: unknown) => {
+  return Object.prototype.toString.call(obj) === '[object Symbol]'
+}
+
+export const isSet = (obj: unknown) => {
+  return Object.prototype.toString.call(obj) === '[object Set]'
+}
+
+export const isMap = (obj: unknown) => {
+  return Object.prototype.toString.call(obj) === '[object Map]'
+}
+
+export const typeOf = (obj: unknown) => {
+  return Object.prototype.toString.call(obj).slice(8, -1).toLocaleLowerCase()
 }
 
 export const isType = (type: PropsType) => {
