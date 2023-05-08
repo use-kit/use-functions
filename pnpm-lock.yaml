@@ -8,8 +8,8 @@ importers:
         specifier: ^1.11.7
         version: 1.11.7
       observer-emit:
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 1.0.1
+        version: 1.0.1
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^0.38.6
@@ -3837,8 +3837,8 @@ packages:
       es-abstract: 1.21.2
     dev: true
 
-  /observer-emit@1.0.0:
-    resolution: {integrity: sha512-0+DInu0Qm3zZV6wnDkmi6yvhIkZS8OHFqapMCfd4Z3Fk+5ef36GFevb4QLfDPfIzshIZMEXe9tIY8c43ZVpIug==}
+  /observer-emit@1.0.1:
+    resolution: {integrity: sha512-z7R3kNj351QGUYx2GSDSr9OJTozBdnzfp3MMLVi7LS8VUls/AUOV/LpzIWo6yexAkfGeDzKvKAsnv8iAL07W0Q==}
     dev: false
 
   /ohash@1.1.2:

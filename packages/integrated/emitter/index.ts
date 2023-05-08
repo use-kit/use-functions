@@ -1,5 +1,3 @@
-import observer from 'observer-emit'
-
-const emitter = observer
+import emitter from 'observer-emit'
 
 export { emitter }
