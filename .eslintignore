@@ -9,3 +9,4 @@ cache/
 !/rollup.config.js
 !.test
 .temp
+**/test.**.ts
