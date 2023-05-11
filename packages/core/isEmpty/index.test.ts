@@ -22,4 +22,8 @@ describe('is empty', () => {
     expect(isEmpty({})).toBe(true)
     expect(isEmpty({ name: 'akashi' })).toBe(false)
   })
+
+  it('should be true', () => {
+    expect(isEmpty()).toBe(true)
+  })
 })

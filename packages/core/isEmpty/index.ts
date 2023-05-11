@@ -1,7 +1,7 @@
 import { isArray, isNull, isObject, isString, isUndefined } from '..'
 
 export const isEmpty = (
-  field: null | undefined | string | any[] | Record<string, any>,
+  field?: null | undefined | string | any[] | Record<string, any>,
 ) => {
   if (isNull(field) || isUndefined(field))
     return true
