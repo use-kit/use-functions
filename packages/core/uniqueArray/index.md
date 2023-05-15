@@ -22,7 +22,7 @@ const arr = [
   { id: 3, name: 'akashi' },
   { id: 4, name: 'shiori' },
 ]
-const ret = uniqueArray(arr)
+const ret = uniqueArray(arr, 'name')
 
 // expect: [
 //   {
