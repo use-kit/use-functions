@@ -21,6 +21,12 @@ describe('should', () => {
         "name": "asuka",
       }
     `)
+
+    expect(objectFilter(obj, (key: any) => key === 'name')).toMatchInlineSnapshot(`
+      {
+        "name": "asuka",
+      }
+    `)
   })
 })
 

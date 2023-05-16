@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getTreeNode, getTreeNodes } from '.'
+import { getTreeNode, getTreeNodes, getParentTree } from '.'
 
 const tree = [{
   id: 'nogi',
@@ -22,6 +22,21 @@ describe('should', () => {
     expect(
       getTreeNodes(tree, (node: any) => node.parent === 'nogi'),
     ).toMatchInlineSnapshot(`
+      [
+        {
+          "id": "asuka",
+          "parent": "nogi",
+        },
+        {
+          "id": "shiori",
+          "parent": "nogi",
+        },
+      ]
+    `)
+  })
+
+  it('getParentTree', () => {
+    expect(getParentTree(tree, (node: any) => node.id === 'shiori')).toMatchInlineSnapshot(`
       [
         {
           "id": "asuka",
