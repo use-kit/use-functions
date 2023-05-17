@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getTreeNode, getTreeNodes, getParentTree } from '.'
+import { getParentTree, getTreeNode, getTreeNodes } from '.'
 
 const tree = [{
   id: 'nogi',

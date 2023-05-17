@@ -9,7 +9,7 @@ Get tree node.
 ## Usage
 
 ```ts
-import { getTreeNode, getTreeNodes, getParentTree } from '@use-kit/functions'
+import { getParentTree, getTreeNode, getTreeNodes } from '@use-kit/functions'
 
 const tree = [{
   id: 'nogi',
