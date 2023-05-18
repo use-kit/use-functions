@@ -1,7 +1,7 @@
 {
   "name": "@use-kit/functions",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "packageManager": "pnpm@8.4.0",
   "description": "",
   "author": "Akashi Sai <akashi_sai@163.com>",
@@ -39,6 +39,7 @@
   "scripts": {
     "build": "unbuild",
     "build:rollup": "rollup --config rollup.config.ts --configPlugin typescript",
+    "clean": "rimraf dist",
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
@@ -46,10 +47,11 @@
     "start": "esno packages/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
+    "docs:clean": "rimraf 'packages/docs/browser' 'packages/docs/core' 'packages/docs/integrated' 'packages/docs/node'",
     "docs:dev": "vitepress dev packages/docs",
     "docs:build": "vitepress build packages/docs",
     "docs:preview": "vitepress preview packages/docs",
-    "ci-docs": "tsno run scripts/ci-docs.ts"
+    "ci-docs": "nr docs:clean && tsno run scripts/ci-docs.ts"
   },
   "dependencies": {
     "dayjs": "^1.11.7",
