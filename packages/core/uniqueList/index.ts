@@ -1,6 +1,6 @@
 import { typeOf } from '../isType'
 
-export const uniqueArray = (
+export const uniqueList = (
   arr: (number | string)[] | Record<string, any>[] = [],
   key = 'id',
 ): (number | string)[] | Record<string, any>[] => {
