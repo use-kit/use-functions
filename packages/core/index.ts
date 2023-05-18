@@ -20,6 +20,9 @@ export * from './isBase64'
 export * from './isEmpty'
 export * from './isType'
 
+export * from './sum'
+export * from './sumPercent'
+
 export * from './throttle'
 
 export * from './uniqueList'
