@@ -24,7 +24,25 @@ export const toNumber = (target: string | number, keepSize = true) => {
     return Number(target)
   }
 
-  return target
+  return target as number
+}
+
+export const withPercentCalculate = (
+  target: string | number,
+  source: string | number,
+) => {
+  if (isString(target) || isString(source)) {
+    const x = isNaN(Number(target)) ? toNumber(target) : Number(target)
+    const y = isNaN(Number(source)) ? toNumber(source) : Number(source)
+
+    // with percent
+    if (isNaN(Number(target)) || isNaN(Number(source)))
+      return x * y
+
+    return x + y
+  }
+
+  return Number(target) + Number(source)
 }
 
 export const sumPercent = (target: string, source: string) => {
