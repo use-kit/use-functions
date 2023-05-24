@@ -20,9 +20,13 @@ export * from './isBase64'
 export * from './isEmpty'
 export * from './isType'
 
+export * from './mergeField'
+
 export * from './sum'
 export * from './sumPercent'
 
 export * from './throttle'
 
 export * from './uniqueList'
+
+export * from './withDefaultObject'
