@@ -26,6 +26,9 @@ importers:
       '@types/node':
         specifier: ^18.16.5
         version: 18.16.5
+      '@use-kit/node':
+        specifier: ^0.0.1
+        version: registry.npmjs.org/@use-kit/node@0.0.1
       bumpp:
         specifier: ^9.1.0
         version: 9.1.0
@@ -5078,4 +5081,10 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  registry.npmjs.org/@use-kit/node@0.0.1:
+    resolution: {integrity: sha512-yOVA/Os/ouUBKUHQvzDEaOoyfvAZfl4SOlOwhpzjEqhYAABfx2jvf+9bf0M0ol1KN6X3jYrZzajB90UgsLcypA==, registry: https://registry.npmmirror.com/, tarball: https://registry.npmjs.org/@use-kit/node/-/node-0.0.1.tgz}
+    name: '@use-kit/node'
+    version: 0.0.1
     dev: true

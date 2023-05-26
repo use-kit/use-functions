@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import fg from 'fast-glob'
 import { mkdirp } from 'mkdirp'
-import { scan } from '../packages'
+import { scan } from '@use-kit/node'
 
 // const root = path.dirname(process.cwd())
 
