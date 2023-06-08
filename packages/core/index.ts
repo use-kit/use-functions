@@ -14,6 +14,7 @@ export * from './getFileType'
 export * from './getObjectField'
 export * from './getTreeNode'
 
+export * from './hasField'
 export * from './hideMobile'
 
 export * from './isBase64'
