@@ -22,6 +22,7 @@ export * from './isEmpty'
 export * from './isType'
 
 export * from './mergeField'
+export * from './mergeList'
 
 export * from './sum'
 export * from './sumPercent'
