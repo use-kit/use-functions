@@ -70,9 +70,20 @@ export const typeOf = (obj: unknown) => {
   return Object.prototype.toString.call(obj).slice(8, -1).toLocaleLowerCase()
 }
 
+function getCapitalized(str: string) {
+  return str.slice(0, 1).toUpperCase() + str.slice(1).toLowerCase()
+}
+
+function getDataType(type: PropsType) {
+  if (type.includes('-'))
+    return type.split('-').map(str => getCapitalized(str)).join('')
+
+  return getCapitalized(type)
+}
+
 export const isType = (type: PropsType) => {
   return (obj: unknown) => {
-    const dataType = type.slice(0, 1).toUpperCase() + type.slice(1).toLowerCase()
+    const dataType = getDataType(type)
     return Object.prototype.toString.call(obj) === `[object ${dataType}]`
   }
 }
