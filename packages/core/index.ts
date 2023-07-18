@@ -11,6 +11,7 @@ export * from './generateTree'
 
 export * from './getAge'
 export * from './getConstellation'
+export * from './getField'
 export * from './getFileType'
 export * from './getObjectField'
 export * from './getTreeNode'

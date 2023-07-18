@@ -14,6 +14,13 @@ export const isPercent = (target: string | number) => {
   return target.toString().includes('%')
 }
 
+export const isPixel = (target: string | number) => {
+  if (isNumber(target))
+    return false
+
+  return target.toString().includes('px')
+}
+
 export const toNumber = (target: string | number, keepSize = true) => {
   if (isString(target)) {
     if (isPercent(target)) {
