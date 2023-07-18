@@ -6,6 +6,10 @@ category: '@Core'
 
 Compose tree.
 
+::: tip
+It compose tree for one root node, recommended to use [generateTree](https://use-functions.netlify.app/core/generateTree/) to supported multiple root nodes.
+:::
+
 ## Usage
 
 ```ts
