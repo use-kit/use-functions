@@ -1,8 +1,12 @@
 export const download = (url: string, name = 'download') => {
-  // TODO: unprocessed => fetch cors
   const link = document.createElement('a')
-
   link.download = name
   link.href = url
-  link.click()
+
+  // Check if the browser supports the download attribute
+  if (typeof link.download === 'undefined')
+    window.open(url)
+
+  else
+    link.click()
 }
