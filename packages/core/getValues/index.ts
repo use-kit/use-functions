@@ -1,6 +1,6 @@
-export const getValues = (
-  target: Record<string, any>,
-) => {
-  // TODO: use like lodash.values()
-  return []
+export const getValues = <T>(object: { [key: string]: T } | null | undefined): T[] => {
+  if (object == null)
+    return []
+
+  return Object.keys(object).map(key => object[key])
 }
