@@ -9,8 +9,8 @@
 //   return preset
 // }
 
-export const getField = <T>(target: any, path: string, preset?: T): T => {
-  const keys = path.split('.')
+export function getField<T>(target: any, path: string | string[], preset?: T): T {
+  const keys = Array.isArray(path) ? path : path.split('.')
   let value: any = target
 
   for (const key of keys) {
