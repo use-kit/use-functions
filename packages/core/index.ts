@@ -15,6 +15,7 @@ export * from './getField'
 export * from './getFileType'
 export * from './getObjectField'
 export * from './getTreeNode'
+export * from './getValues'
 
 export * from './hasField'
 export * from './hideMobile'
