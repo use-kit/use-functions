@@ -1,6 +1,19 @@
-export const getValues = <T>(object: { [key: string]: T } | null | undefined): T[] => {
-  if (object == null)
+import { isEmpty, isMap } from '..'
+
+interface GenericObject<T> {
+  [key: string]: T
+}
+
+export const getValues = <T>(object: {
+  [key: string]: T
+} | Map<string, T> | string | null | undefined): T[] => {
+  if (isEmpty(object))
     return []
 
-  return Object.keys(object).map(key => object[key])
+  if (isMap(object))
+    return Array.from((object as Map<string, T>).values())
+
+  return Object
+    .keys((object as GenericObject<T>))
+    .map(key => (object as GenericObject<T>)[key])
 }

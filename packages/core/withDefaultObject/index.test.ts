@@ -60,9 +60,15 @@ describe('default object', () => {
   it('with default undefined', () => {
     const target = undefined
     const source = { x: 0, y: 0 }
-    withDefaultObject(target, source)
+    const ret = withDefaultObject(target, source)
 
-    // TODO:
+    // undefined can't set to object, use return value
     expect(target).toMatchInlineSnapshot('undefined')
+    expect(ret).toMatchInlineSnapshot(`
+      {
+        "x": 0,
+        "y": 0,
+      }
+    `)
   })
 })
