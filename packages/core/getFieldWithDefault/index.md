@@ -12,5 +12,5 @@ Get object field with multiple default fields.
 import { getFieldWithDefault } from '@use-kit/functions'
 
 const obj = { name: 'asuka', age: 23, height: 158 }
-const ret = getFieldWithDefault(obj, 'default', obj.id, obj.name, obj.nickname) // 'asuak'
+const ret = getFieldWithDefault(obj, obj.id, obj.name, obj.nickname) // 'asuak'
 ```

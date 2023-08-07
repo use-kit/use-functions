@@ -1,6 +1,5 @@
 interface ObjectWithFields { [key: string]: any }
 
-// TODO: get field with multiple default fields
 export function getFieldWithDefault<T>(
   obj: ObjectWithFields,
   ...fields: T[]
