@@ -12,7 +12,7 @@ describe('getFieldWithDefault', () => {
     )).toMatchInlineSnapshot('"asuka"')
   })
 
-  it('undefined', () => {
+  it('multiple undefined', () => {
     const obj = { name: 'asuka', age: 23, height: 158 }
     const fields = [undefined, null, '', 'field']
 
