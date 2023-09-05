@@ -43,7 +43,7 @@ export function isFullScreen(): boolean {
   return fullscreenElement !== undefined
 }
 
-export function toggleFullScreen(element: HTMLElement) {
+export function toggleFullScreen(element?: HTMLElement) {
   element = element || document.documentElement
   if (
     (
