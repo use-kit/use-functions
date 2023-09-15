@@ -42,3 +42,36 @@ describe('merge field', () => {
     ]
   `))
 })
+
+describe('merge with more field', () => {
+  const targetList = [{
+    id: 1,
+    name: 'akashi',
+  }, {
+    id: 2,
+    name: 'asuka',
+  }]
+
+  const sourceList = [{
+    id: 3,
+    name: 'shiori',
+  }]
+
+  const ret = mergeList(targetList, sourceList, 'id')
+  it('should return merge list', () => expect(ret).toMatchInlineSnapshot(`
+    [
+      {
+        "id": 1,
+        "name": "akashi",
+      },
+      {
+        "id": 2,
+        "name": "asuka",
+      },
+      {
+        "id": 3,
+        "name": "shiori",
+      },
+    ]
+  `))
+})

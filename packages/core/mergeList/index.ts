@@ -9,9 +9,13 @@ export const mergeList = (
   sourceList: objParams[],
   fieldKey: string,
 ) => {
-  targetList.forEach((target) => {
-    const source = sourceList.find(s => s[fieldKey] === target[fieldKey])
-    mergeField(target, source ?? {})
+  sourceList.forEach((source) => {
+    const target = targetList.find(t => t[fieldKey] === source[fieldKey])
+    if (!target)
+      targetList.push(source)
+
+    else
+      mergeField(target, source ?? {})
   })
 
   return targetList

@@ -26,4 +26,9 @@ describe('is empty', () => {
   it('should be true', () => {
     expect(isEmpty()).toBe(true)
   })
+
+  // TODO: fix
+  it.skip('should string empty', () => {
+    expect(isEmpty('  ')).toBe(true)
+  })
 })
