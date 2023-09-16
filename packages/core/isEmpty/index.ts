@@ -7,7 +7,7 @@ export const isEmpty = (
     return true
 
   if (isString(field))
-    return field === ''
+    return (field as string).trim() === ''
 
   if (isArray(field))
     return !(field as []).length

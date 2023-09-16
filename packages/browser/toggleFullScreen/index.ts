@@ -6,7 +6,7 @@ export function fullScreen(id?: string) {
 
   const screen = (el as Element).requestFullscreen
   let wScript = null
-  if (typeof screen != 'undefined' && screen) {
+  if (typeof screen != 'undefined') {
     screen.call(el)
     return
   }
@@ -23,7 +23,7 @@ export function exitFullScreen() {
 
   let wScript = null
 
-  if (typeof screen != 'undefined' && screen) {
+  if (typeof screen != 'undefined') {
     screen.call(document)
     return
   }
@@ -35,7 +35,15 @@ export function exitFullScreen() {
   }
 }
 
-export function toggleFullScreen(element: HTMLElement) {
+export function isFullScreen(): boolean {
+  const fullscreenElement
+    = document.fullscreenElement
+    || (document as any).webkitFullscreenElement
+    || (document as any).mozFullScreenElement
+  return fullscreenElement !== undefined
+}
+
+export function toggleFullScreen(element?: HTMLElement) {
   element = element || document.documentElement
   if (
     (
