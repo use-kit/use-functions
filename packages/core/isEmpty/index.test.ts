@@ -27,8 +27,7 @@ describe('is empty', () => {
     expect(isEmpty()).toBe(true)
   })
 
-  // TODO: fix
-  it.skip('should string empty', () => {
+  it('should be true with string trim', () => {
     expect(isEmpty('  ')).toBe(true)
   })
 })
