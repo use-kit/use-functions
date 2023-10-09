@@ -25,6 +25,7 @@ export * from './hideMobile'
 export * from './isBase64'
 export * from './isEmpty'
 export * from './isType'
+export * from './isValidJSON'
 
 export * from './mergeField'
 export * from './mergeList'
