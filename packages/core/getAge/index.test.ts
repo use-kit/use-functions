@@ -3,6 +3,6 @@ import { getAge } from '.'
 
 describe('should', () => {
   it('exported', () => {
-    expect(getAge('1997-09-28')).toMatchInlineSnapshot('25')
+    expect(getAge('1997-09-28')).toMatchInlineSnapshot('26')
   })
 })
