@@ -16,6 +16,7 @@ export * from './getFieldWithDefault'
 export * from './getFileType'
 export * from './getKeys'
 export * from './getObjectField'
+export * from './getRatingStar'
 export * from './getTreeNode'
 export * from './getValues'
 
@@ -30,6 +31,7 @@ export * from './isValidJSON'
 export * from './mergeField'
 export * from './mergeList'
 
+export * from './stringByteSize'
 export * from './sum'
 export * from './sumPercent'
 
