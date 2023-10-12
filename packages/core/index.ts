@@ -31,6 +31,8 @@ export * from './isValidJSON'
 export * from './mergeField'
 export * from './mergeList'
 
+export * from './replaceTreeFields'
+
 export * from './stringByteSize'
 export * from './sum'
 export * from './sumPercent'
