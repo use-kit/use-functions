@@ -25,3 +25,17 @@ function ci() {
 }
 
 ci()
+
+// function ciTest() {
+//   fsExtra.copy('packages/', 'doctest/', {
+//     filter: (file) => {
+//       console.log(file)
+//       const isFile = fsExtra.statSync(file).isFile()
+//       const isMdFile = isFile && file.endsWith('.md')
+//       const isExampleDir = !isFile && !file.includes('docs') && !file.includes('utils')
+//       return isMdFile || isExampleDir
+//     },
+//   })
+// }
+
+// ciTest()

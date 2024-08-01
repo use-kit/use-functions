@@ -51,7 +51,8 @@
     "docs:dev": "vitepress dev packages/docs",
     "docs:build": "vitepress build packages/docs",
     "docs:preview": "vitepress preview packages/docs",
-    "ci-docs": "nr docs:clean && tsno run scripts/ci-docs.ts"
+    "ci-docs": "nr docs:clean && tsno run scripts/ci-docs.ts",
+    "ci": "tsno run scripts/ci-docs.ts"
   },
   "dependencies": {
     "dayjs": "^1.11.7",
@@ -62,12 +63,14 @@
     "@antfu/ni": "^0.21.3",
     "@antfu/utils": "^0.7.2",
     "@rollup/plugin-typescript": "^11.1.0",
+    "@types/fs-extra": "^11.0.4",
     "@types/node": "^18.16.5",
     "@use-kit/node": "^0.0.1",
     "bumpp": "^9.1.0",
     "eslint": "^8.40.0",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.12",
+    "fs-extra": "^11.2.0",
     "lint-staged": "^13.2.2",
     "mkdirp": "^3.0.1",
     "pnpm": "^7.32.3",
