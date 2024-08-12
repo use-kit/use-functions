@@ -1,7 +1,7 @@
-interface TreeNode<T> {
-  value: T
-  children: TreeNode<T>[]
-}
+// interface TreeNode<T> {
+//   value: T
+//   children: TreeNode<T>[]
+// }
 
 export const replaceTreeFields = (tree: Record<string, unknown>[], fields: Record<string, string>) => {
   const newTree = tree.map((node) => {

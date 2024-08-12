@@ -5,7 +5,7 @@ describe('merge field', () => {
   it('should', () => {
     const target = { a: 'a', d: 'd' }
     const source = { a: 'b', b: 'b', c: 'c' }
-    const ret = mergeField(target, source)
+    mergeField(target, source)
     expect(target).toMatchInlineSnapshot(`
       {
         "a": "b",
