@@ -20,5 +20,5 @@ export function getField<T>(target: any, path: string | string[], preset?: T): T
     value = value[key]
   }
 
-  return value !== undefined ? value : preset
+  return value !== undefined ? value : (preset as T)
 }
